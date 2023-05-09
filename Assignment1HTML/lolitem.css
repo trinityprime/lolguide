@@ -1,2 +1,53 @@
+body {
+    background-color: #121212;
+}
+#title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:white; font-size: 50px; 
+}
+  p {
+    font-family: sans-serif; color: whitesmoke
+  }
+  h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; color:yellow
+  }
+  li {
+    font-family: sans-serif; color:whitesmoke
+  }
+  .stats {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+    
+.map {
+    float: left;
+}
 
-  
+td, tr {
+    font-family: sans-serif; color: whitesmoke;
+}
+
+th {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; color: yellow
+}
+s
+th, td {
+    padding:15px; text-align: center;
+}
+caption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;
+}
+#champtable, #champtable2 {
+    float:left; margin-right: 200px; 
+}
+
+#champtable2 {
+  margin: 20px 0; padding: 10px; float:left;
+}
+
+caption { font-style: italic; margin-bottom: 10px; 
+}
+
+#website {
+  color: yellow; background-color: transparent; text-decoration: underline; 
+}
