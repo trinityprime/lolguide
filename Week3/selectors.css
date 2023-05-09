@@ -1,0 +1,10 @@
+#header, #headerpara, #para1, #para2, #header2, #para3, #para4, #para5, #para6, #para7, #bottom {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  }
+  
+  #line1, #line2 {
+    background-color: green; 
+    height: 20px; 
+    width: 1000px;
+  }
+  
