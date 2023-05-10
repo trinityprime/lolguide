@@ -51,3 +51,15 @@ caption { font-style: italic; margin-bottom: 10px;
 #website {
   color: yellow; background-color: transparent; text-decoration: underline; 
 }
+.towers {
+  border-style: solid; border-width: 3px; border-color: whitesmoke; padding: 1em; display:inline-block
+}
+.dragons {
+  border-style: solid; border-width: 3px; border-color: red; padding: 1em; display: inline-block; text-align: left;
+}
+.soul {
+  border-style: solid; border-width: 3px; border-color: orange; padding: 1em; display: inline-block; text-align: left;
+}
+.baron {
+  border-style: solid; border-width: 3px; border-color: purple; padding: 1em; display: inline-block; text-align: left;
+}
