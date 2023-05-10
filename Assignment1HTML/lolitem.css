@@ -1,65 +1,78 @@
 body {
-    background-color: #121212;
+  background-color: #121212;
 }
 #title {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:white; font-size: 50px; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 50px;
 }
-  p {
-    font-family: sans-serif; color: whitesmoke
-  }
-  h4 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; color:yellow
-  }
-  li {
-    font-family: sans-serif; color:whitesmoke
-  }
-  .stats {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-    
-.map {
-    float: left;
+p, li, td, tr {
+  font-family: sans-serif;
+  color: whitesmoke;
 }
-
-td, tr {
-    font-family: sans-serif; color: whitesmoke;
+h4, th {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+h4 {
+  color: yellow;
+}
 th {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; color: yellow
+  color: yellow;
 }
-s
+li {
+  color: whitesmoke;
+}
+.stats {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.map {
+  float: left;
+}
 th, td {
-    padding:15px; text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 caption {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-style: italic;
+  margin-bottom: 10px;
 }
-#champtable, #champtable2 {
-    float:left; margin-right: 200px; 
-}
-
+#champtable,
 #champtable2 {
-  margin: 20px 0; padding: 10px; float:left;
+  float: left;
 }
-
-caption { font-style: italic; margin-bottom: 10px; 
+#champtable {
+  margin-right: 200px;
 }
-
+#champtable2 {
+  margin: 20px 0;
+  padding: 10px;
+  float: left;
+}
 #website {
-  color: yellow; background-color: transparent; text-decoration: underline; 
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.towers, .dragons, .soul, .baron {
+  border-style: solid;
+  border-width: 3px;
+  padding: 1em;
+  display: inline-block;
+  text-align: left;
 }
 .towers {
-  border-style: solid; border-width: 3px; border-color: whitesmoke; padding: 1em; display:inline-block
+  border-color: whitesmoke;
 }
 .dragons {
-  border-style: solid; border-width: 3px; border-color: red; padding: 1em; display: inline-block; text-align: left;
+  border-color: red;
 }
 .soul {
-  border-style: solid; border-width: 3px; border-color: orange; padding: 1em; display: inline-block; text-align: left;
+  border-color: orange;
 }
 .baron {
-  border-style: solid; border-width: 3px; border-color: purple; padding: 1em; display: inline-block; text-align: left;
+  border-color: purple;
 }
