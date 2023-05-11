@@ -38,14 +38,15 @@
         <div>
         <h4>2. How do I pilot my character?</h4>
         <p>Every champion has auto-attacks and abilities at their disposal. Auto-attacks, also known as “basic attacks” occur when a player right clicks on a target, continuing until it dies. Abilities are cast using Q, W, E, and R. Every champion has abilities that are unique to them for each of these buttons. Here is Xayahs ultimate "Featherstorm", in action below (left), as well as Aphelios using multiple abilites below (right)</p>
+        
         <div>
         <img src="media/xayahult.gif"/>
-        <img src="media/aphel.gif" width="565" height="350"/>
+        <img src="media/aphel.gif" id="aphel" width="565" height="350"/>
         <p>A major aspect that sets champions apart is the distribution of their stats. Stats represent a champions make up as far as how hard they are to kill, how much damage they do, and how fast they move or attack.</p>
       
         <div class="stats"> 
-        <img src="images/healthmana.jpeg" width="500" height="250" /> 
-        <img src="images/levleip.jpg" width="500" height="250"/> 
+        <img src="images/healthmana.jpeg" width="600" height="250" /> 
+        <img src="images/levleip.jpg" id="level" width="570" height="250"/> 
         </div>
 
         
@@ -169,33 +170,63 @@
     <img src="images/scoreboardinked.png" width="900" height="400"/>
     <p>The picture above shows the ingame scoreboard that shows everything you need to know during the game.</p>
     <p>It can look quite complicated at first, but we will just be focussing on the top part of the scoreboard.</p>
-    <p class="towers">The white area shows the number of towers that your team have destroyed.</p>
+    <div class="towers">
+    <p>The white area shows the number of structures that your team have destroyed.</p>
+    <img src="images/tower.png" height="400" width="300"/>
+    <img src="images/inhibitor.png" id="inhib" height="300" width="300"/> 
+    </div>
+    <img src="images/turret.png" id="turretref" height="70" width="300"/>
     <br>
+
+    
     <div class="dragons">
-    <p>The red area shows the number of dragons that your team have slayed.</p>
+    <img src="images/dragonref.jpg" id="dragonref" wdith="100"/>
+    <p>The red area shows the number of dragons that your team have slayed. (Allied team: Left, Enemy team: Right)</p>
     <p>Since dragons require quite a bit of explaining, you can watch this video to gain a basic understanding of this objective.</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/v-OF9qsh2yE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <p>Basically, The first dragon will always appear at 5:00 in every LoL match. But if you slay it in 7:55 for example, the next dragon will spawn at 13:55.</p>
-    <p>There’s no way of controlling which dragon is going to spawn next in LoL. You can only check which drake will be next either in the logo on the dragon pit or when you press “TAB”.</p>
+    <p>There is no way of controlling which dragon is going to spawn next in LoL. You can only check which drake will be next either in the logo on the dragon pit or when you press “TAB”.</p>
     <br>
+
     </div>
     <div class="soul">
     <p>The orange area represents the current dragon soul. When it lights up, it shows the type of dragon soul that your team currently has.</p>
-    <p>If your team collects 4 dragon buffs (no matter the combination), you’ll get the dragon Soul buff of the third dragon’s type (right to left).</p>
-    <p>The Soul is a powerful permanent buff that often determines whether you’ll win the game or not.</p>
+    <p>If your team collects 4 dragon buffs (no matter the combination), you'll get the dragon Soul buff of the third dragon’s type (right to left).</p>
+    <p>The Soul is a powerful permanent buff that often determines whether you'll win the game or not.</p>
     <p>If you want to know more about what each dragon soul does, <a href="https://www.dexerto.com/league-of-legends/all-league-of-legends-buffs-baron-chemtech-hextech-dragons-1742106/">check out this article!</a></p>
     </div>
     <br>
+
     <div class="baron">
-    <p>The purple area represents the timer for when the Baron Nashor will spawn.</p>
-    <p>Baron is the most powerful monster in Summoner’s Rift so you’ll need multiple team members to slay it unless a match goes on for a very long time</p>
-    <p>Killing the Baron which spawns at 20 minutes grants the following buff:</p>
-    <img src="images/baronbuff.jpg"/>
+    <p>The purple area represents the timer for when the Baron Nashor will spawn. (20 minutes)</p>
+    <p>Baron is the most powerful monster in Summoner's Rift so you'll need multiple team members to slay it unless a match goes on for a very long time</p>
+    <p>Killing the Baron grants the following buff:</p>
+    <img src="images/nashor.png" width="250" height="250"/>
+    <img src="images/baronbuff.jpg" id="baronbuff"/>
     <p>If you do not outright win by pushing with Baron minions, the enemy base will likely be destroyed enough to make your future attempts much easier.</p>
     </div>
-    <div>
-
+    
+    <div class="elder">
+    <p>The yellow area represents the timer for when Elder Dragon will spawn (35:00 minutes or six minutes after the soul is taken.)</p>
+    <img src="images/elder.jpg"/>
+    <img src="images/elderbuff.png" id="elderbuff" height="200"/>
+    <p>Once you are able to kill the elder dragon and get the Aspect of the Dragon's buff (Elder buff), it's pretty much game over.</p>
+    <p>This buff basically instantly kills any enemy lower than 20% health, unless they become invulnerable.</p>
     </div>
+
+    <div class="herald">
+    <p>One objective that was not included is the Rift Herald. The Rift Herald is a monster that resides in the Baron pit before Baron is slain, and spawns 8 minutes in.</p>
+    <img src="images/riftherald.png" width="600" height="380"/>
+    <img src="media/riftheraldcharge.gif" id="heraldcharge"/>
+    <p>The Herald is quite tanky so you may need multiple members of your team to kill it.</p>
+    <p>A crucial tip to remember is that it has a weak spot on it's back that will inflict additional damage if you hit it.</p>
+    <img src="images/heralddrop.png" id="heralddrop" width="400" height="200"/>
+    <p>After a team kills the Herald, a purple item, called Eye of the Herald (right), will drop that one allied team member can pick up</p>
+    <p>The Eye of the Herald will remain in your inventory for 4 minutes and expire if not used.</p>
+    <p>When used, the Eye will summon the Herald to fight for your team by attacking enemy structures until it dies. Here it is top right:</p>
+    </div>
+
+
 
     
     

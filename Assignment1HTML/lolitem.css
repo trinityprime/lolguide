@@ -40,6 +40,12 @@ caption {
   font-style: italic;
   margin-bottom: 10px;
 }
+#aphel {
+  margin-left: 70px;
+}
+#level {
+  margin-left: 70px;
+}
 #champtable,
 #champtable2 {
   float: left;
@@ -59,15 +65,24 @@ caption {
   background-color: transparent;
   text-decoration: underline;
 }
-.towers, .dragons, .soul, .baron {
+.towers, .dragons, .soul, .baron, .elder, .herald, #turretref{
   border-style: solid;
   border-width: 3px;
   padding: 1em;
   display: inline-block;
   text-align: left;
+  margin: 5px;
+}
+#turretref {
+  margin-left: 100px;
+  margin-bottom: 160px;
+  border-color: whitesmoke;
 }
 .towers {
   border-color: whitesmoke;
+}
+#dragonref {
+
 }
 .dragons {
   border-color: red;
@@ -78,6 +93,28 @@ caption {
 .baron {
   border-color: purple;
 }
-#float {
-  float: left;
+.elder {
+  border-color: yellow;
+}
+#elderbuff {
+  margin-bottom: 100px;
+}
+#inhib {
+  margin-bottom: 70px;
+  margin-left: 5px
+}
+#baronbuff {
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+.herald {
+  border-color: green;
+}
+#heraldcharge {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+#heralddrop {
+  margin-right: 10px;
+  float: right
 }
