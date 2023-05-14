@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,300&family=Montserrat:wght@500&display=swap');
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: yellow;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+  margin-bottom: 5px;
+}
+
+nav ul {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 30px;
+  position: relative;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+body {
+  background-color: #121212;
+  margin: 0;
+}
+
+main {
+  width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  font-size: 50px;
+  background-color: yellow;
+  text-align: center;
+}
+
+p, li, td, tr {
+  font-family: 'Barlow', sans-serif;
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+h4, th {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4 {
+  color: yellow;
+}
+
+th {
+  color: yellow;
+}
+
+li {
+  color: whitesmoke;
+}
+
+.stats {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.map {
+  float: left;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+
+caption {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#xayah, #aphel, #healthmana, #level, #map2, #herald, #heraldcharge{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#level {
+  padding: 10px;
+}
+
+table  {
+  border-collapse: collapse;
+  border-color: whitesmoke;
+}
+
+#champtable {
+  margin-right: 200px;
+  margin-left: 60px;
+  float:left
+}
+
+#champtable2 {
+  margin: 20px 0;
+  margin-left: 150px;
+  margin-right: 270px;
+  padding: 20px;  
+  margin-bottom: 0px;
+  float: right;
+}
+
+#website {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.towers, .dragons, .soul, .baron, .elder, .herald {
+  border-style: solid;
+  border-width: 3px;
+  padding: 1em;
+  display: inline-block;
+  text-align: left;
+  margin: 5px;
+}
+
+#turretref {
+  border-color: whitesmoke;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.towers {
+  border-color: whitesmoke;
+}
+
+.dragons {
+  border-color: red;
+}
+
+.soul {
+  border-color: orange;
+}
+
+.baron {
+  border-color: purple;
+}
+
+.elder {
+  border-color: yellow;
+}
+
+#elderbuff {
+  margin-bottom: 100px;
+  padding-left: 50px;
+}
+
+#inhib {
+  margin-bottom: 70px;
+  margin-left: 5px
+}
+
+#baronbuff {
+  width: 600px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.herald {
+  border-color: green;
+}
+
+#heralddrop {
+  margin-right: 10px;
+  float: right;
+  padding: 10px;
+}
