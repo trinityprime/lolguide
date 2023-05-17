@@ -40,6 +40,7 @@ padding: 10px 0;
 text-decoration: none;
 border-bottom: 1px solid #777;
 font-size: 19px;
+font-family: "Barlow", sans-serif;
 }
 
 .sidebar a:hover {
@@ -69,7 +70,7 @@ main {
   text-align: center;
 }
 
-p, li, td, tr {
+p, li, td, tr, h2 {
   font-family: 'Barlow', sans-serif;
   color: whitesmoke;
   font-size: 18px;
@@ -223,4 +224,41 @@ table  {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab {
+  margin-right: 10px;
+}
+
+.tab input[type="radio"] {
+  display: none;
+}
+
+.tab label {
+  display: block;
+  padding: 10px 20px;
+  background-color: #ccc;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+}
+
+.tab input[type="radio"]:checked + label {
+  background-color: yellow;
+}
+
+.tab-content {
+  display: none;
+  padding: px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+.tab-content p {
+  margin: 0;
 }
