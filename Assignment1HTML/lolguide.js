@@ -5,21 +5,20 @@ window.addEventListener('scroll', function() {
   let scrollPercentage = (scrollPosition / (documentHeight - windowHeight)) * 100;
   document.querySelector('#scroll-indicator-progress').style.width = scrollPercentage + '%';
 });
-
 const tabs = document.querySelectorAll('.tab');
 
 tabs.forEach(tab => {
   const input = tab.querySelector('input[type="radio"]');
-  const content = tab.querySelector('.tab-content');
+  const content = tab.nextElementSibling;
 
   input.addEventListener('change', () => {
     tabs.forEach(otherTab => {
-      const otherContent = otherTab.querySelector('.tab-content');
-      if (otherTab !== tab && otherContent.style.display === 'block') {
-        otherContent.style.display = 'none';
+      const otherContent = otherTab.nextElementSibling;
+      if (otherTab !== tab && !otherContent.hasAttribute('hidden')) {
+        otherContent.setAttribute('hidden', '');
       }
     });
 
-    content.style.display = 'block';
+    content.removeAttribute('hidden');
   });
 });

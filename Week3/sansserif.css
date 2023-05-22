@@ -1,5 +1,5 @@
 #header {
-    background-color:blue; color:white;
+    background-color:blue; color:white
 }
 #desc {
     color:#404a14;
@@ -15,4 +15,8 @@
 }
 #Arial_Tahoma {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    text-align: center;
 }

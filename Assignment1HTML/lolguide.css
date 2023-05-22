@@ -254,8 +254,8 @@ table  {
 
 .tab-content {
   display: none;
-  padding: px;
   background-color: #fff;
+  border: 1px solid white;
   border-radius: 0 0 10px 10px;
 }
 
