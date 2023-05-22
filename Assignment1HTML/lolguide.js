@@ -1,4 +1,4 @@
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   let scrollPosition = document.documentElement.scrollTop;
   let documentHeight = document.documentElement.scrollHeight;
   let windowHeight = document.documentElement.clientHeight;

@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,300&family=Montserrat:wght@500&display=swap');
+
 .container {
-	width: 80%;
-	margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #scroll-indicator {
@@ -22,33 +23,33 @@
 }
 
 .sidebar {
-position: fixed;
-top: 0;
-left: 0;
-height: 100%;
-width: 180px;
-background-color: black;
-color: #fff;
-padding: 20px;
-overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 180px;
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  overflow-y: auto;
 }
 
 .sidebar a {
-display: block;
-color: #fff;
-padding: 10px 0;
-text-decoration: none;
-border-bottom: 1px solid #777;
-font-size: 19px;
-font-family: "Barlow", sans-serif;
+  display: block;
+  color: #fff;
+  padding: 10px 0;
+  text-decoration: none;
+  border-bottom: 1px solid #777;
+  font-size: 19px;
+  font-family: "Barlow", sans-serif;
 }
 
 .sidebar a:hover {
-background-color: #555;
+  background-color: #555;
 }
 
 .content {
-text-align: center;
+  text-align: center;
 }
 
 body {
@@ -70,13 +71,18 @@ main {
   text-align: center;
 }
 
-p, li, td, tr, h2 {
+p,
+li,
+td,
+tr,
+h2 {
   font-family: 'Barlow', sans-serif;
   color: whitesmoke;
   font-size: 18px;
 }
 
-h4, th {
+h4,
+th {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -102,10 +108,12 @@ li {
   float: left;
 }
 
-th, td {
+th,
+td {
   padding: 15px;
   text-align: center;
 }
+
 caption {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
@@ -113,7 +121,15 @@ caption {
   margin-bottom: 10px;
 }
 
-#xayah, #aphel, #healthmana, #level, #map2, #herald, #heraldcharge, #csing, #shop{
+#xayah,
+#aphel,
+#healthmana,
+#level,
+#map2,
+#herald,
+#heraldcharge,
+#csing,
+#shop {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -123,7 +139,7 @@ caption {
   padding: 10px;
 }
 
-table  {
+table {
   border-collapse: collapse;
   border-color: whitesmoke;
 }
@@ -131,14 +147,14 @@ table  {
 #champtable {
   margin-right: 200px;
   margin-left: 60px;
-  float:left
+  float: left
 }
 
 #champtable2 {
   margin: 20px 0;
   margin-left: 150px;
   margin-right: 270px;
-  padding: 20px;  
+  padding: 20px;
   margin-bottom: 0px;
   float: right;
 }
@@ -149,7 +165,12 @@ table  {
   text-decoration: underline;
 }
 
-.towers, .dragons, .soul, .baron, .elder, .herald {
+.towers,
+.dragons,
+.soul,
+.baron,
+.elder,
+.herald {
   border-style: solid;
   border-width: 3px;
   padding: 1em;
@@ -163,7 +184,7 @@ table  {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
 
 .towers {
@@ -248,7 +269,7 @@ table  {
   font-weight: bold;
 }
 
-.tab input[type="radio"]:checked + label {
+.tab input[type="radio"]:checked+label {
   background-color: yellow;
 }
 
