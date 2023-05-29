@@ -75,7 +75,7 @@
   <br>
   <fieldset>
     <legend>SKT T1 SURVEY</legend>
-    <form action="">
+    <form action="FormProcessor.html" method="get">
 
       <label for="text">What is your IGN?: </label>
       <input type="text" name="name" id="name" required>
@@ -90,17 +90,17 @@
       <br><br>
 
       <label for="checkbox">Tick the 3 best T1 members: </label><br>
-      <input type="checkbox" name="tick" id="tick">SKT T1 Faker<br>
-      <input type="checkbox" name="tick" id="tick">T1 Faker<br>
-      <input type="checkbox" name="tick" id="tick">Faker<br><br>
+      <input type="checkbox" name="SKT T1 Faker" id="SKT T1 Faker">SKT T1 Faker<br>
+      <input type="checkbox" name="T1 Faker" id="T1 Faker">T1 Faker<br>
+      <input type="checkbox" name="Faker" id="Faker">Faker<br><br>
 
       <label for="radio">Who is the GOAT?: </label><br>
-      <input type="radio" name="goat" id="goat">Faker<br>
-      <input type="radio" name="goat" id="goat">Faker<br>
-      <input type="radio" name="goat" id="goat">Faker<br><br>
+      <input type="radio" name="goat" id="Faker">Faker<br>
+      <input type="radio" name="goat" id="Faker">Faker<br>
+      <input type="radio" name="goat" id="Faker">Faker<br><br>
 
       <label for="t1">What is the T1 website?: </label>
-      <input type="url" name="t1" id="t1">
+      <input type="url" name="t1" id="t1website">
       <br><br>
 
       <label for="email">What is your email?: </label>
@@ -109,17 +109,14 @@
 
       <label for="password">What is your password?: </label>
       <input type="password" name="password" id="password">
+      <br><br>
 
-      <label for="age">How old is Faker</label>
+      <label for="age">How old is Faker?: </label>
+      <input type="number" name="age" id="agefaker" min="22" max="22">
+      <br><br>
 
-
-
-
-
-
-
-
-
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
     </form>
   </fieldset>
 </body>
