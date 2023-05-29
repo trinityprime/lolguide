@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,300&family=Montserrat:wght@500&display=swap');
 
+body {
+  background-color: #121212;
+  margin: 0;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -52,11 +57,6 @@
   text-align: center;
 }
 
-body {
-  background-color: #121212;
-  margin: 0;
-}
-
 main {
   width: 60rem;
   margin-left: auto;
@@ -91,7 +91,9 @@ h4 {
 }
 
 th {
-  color: yellow;
+  color: black;
+  background-color: yellow;
+  border-color: black';
 }
 
 li {
@@ -119,6 +121,7 @@ caption {
   color: white;
   font-style: italic;
   margin-bottom: 10px;
+  padding: 10px;
 }
 
 #xayah,
@@ -145,18 +148,15 @@ table {
 }
 
 #champtable {
-  margin-right: 200px;
-  margin-left: 60px;
-  float: left
+  margin-right: auto;
+  margin-left: auto;
+  float: left;
 }
 
 #champtable2 {
-  margin: 20px 0;
-  margin-left: 150px;
-  margin-right: 270px;
-  padding: 20px;
-  margin-bottom: 0px;
-  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 190px;
 }
 
 #website {
@@ -184,7 +184,6 @@ table {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .towers {

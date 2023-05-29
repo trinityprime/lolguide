@@ -1,0 +1,113 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>Form Processor</title>
+<style>
+article {
+		font-family:Bradley Hand ITC;
+		line-height:2em;
+		font-size:1.5em;
+		padding:20px;
+		border-radius:100px 10px 100px 0px;
+		background-color:#FFFF99;
+		margin:10px auto;
+		width:500px;
+		-webkit-transform:skewX(-20deg);
+}
+
+ h1 { text-align:center }
+ 
+.blank {
+	font-weight:900;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+
+var formData = location.search;
+formData = formData.substring(1, formData.length);
+while (formData.indexOf("+") != -1) {
+	formData = formData.replace("+", " ");
+}
+formData = unescape(formData);
+var formArray = formData.split("&");
+var para=new Array();
+var age,color,gender;
+
+function setColor(c){
+	var allBlanks=document.getElementsByClassName("blank");
+	  
+		for (i=0; i<allBlanks.length; i++)
+			allBlanks[i].style.color=c;
+}
+
+function setGender(){
+     if (age>12){
+		if (gender=="boy") 
+			document.getElementById("gender").innerHTML="man";
+		else
+			document.getElementById("gender").innerHTML="woman";
+	}			
+}
+// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+</script>
+<article>
+<h1>Fun Facts</h1>
+<p>On <span id="bdate" class="blank"></span>, there was a <span id="age" class="blank"></span> years old <span id="gender" class="blank"></span> 
+who studies <span id="diploma" class="blank"></span> at NYP loves to <span id="activity" class="blank"></span> at <span id="location" class="blank"></span>. 
+</p>
+<p>If you are interested to be the friend, call at <span id="contact" class="blank"></span> or write an email to <span id="email" class="blank"></span>
+or visit <span id="website" class="blank"></span> </p>
+</article>
+<script>
+for (var i=0; i < formArray.length; ++i) {
+	
+	para=formArray[i].split("=");
+	
+	switch (para[0]) {
+		case "bdate": //d=para[1].split("-");
+					  //document.getElementById("bdate").innerHTML=d[2]+"/"+d[1]+"/"+d[0];
+					  dd=new Date(para[1]);
+					  document.getElementById("bdate").innerHTML=dd.toDateString();
+					  break;
+	    case "age": document.getElementById("age").innerHTML=para[1];
+					age=parseInt(para[1]);
+					break;
+		case "gender":
+					document.getElementById("gender").innerHTML=para[1];
+					gender=para[1];
+					break;
+		case "color": 
+					color=para[1];
+					break;
+		case "diploma":	
+					document.getElementById("diploma").innerHTML=para[1];
+					break;
+		case "activity":
+					document.getElementById("activity").innerHTML=para[1];
+					break;
+		case "location":
+					document.getElementById("location").innerHTML=para[1];
+					break;
+		case "contact":
+					document.getElementById("contact").innerHTML=para[1];
+					break;
+		case "email":
+					document.getElementById("email").innerHTML=para[1];
+					break;
+		case "website":
+					document.getElementById("website").innerHTML=para[1];
+					break;
+	
+    }
+	
+}
+setGender();
+setColor(color);
+
+</script>
+</body>
+</html>
+
