@@ -1,81 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="test.css" />
-    <script>
-        const tabs = document.querySelectorAll('.tab');
+  <title>Personality Test</title>
+  <script>
+    // JavaScript code
+    // Define the questions and answer choices
+    const questions = [
+      {
+        question: "1. What is your favorite color?",
+        answers: [
+          "a) Red",
+          "b) Blue",
+          "c) Green",
+          "d) Yellow"
+        ]
+      },
+      {
+        question: "2. What is your favorite animal?",
+        answers: [
+          "a) Dog",
+          "b) Cat",
+          "c) Elephant",
+          "d) Dolphin"
+        ]
+      },
+      {
+        question: "3. What is your favorite hobby?",
+        answers: [
+          "a) Reading",
+          "b) Playing sports",
+          "c) Painting",
+          "d) Cooking"
+        ]
+      }
+    ];
 
-        tabs.forEach(tab => {
-            const input = tab.querySelector('input[type="radio"]');
-            const content = tab.nextElementSibling;
+    // Define a variable to store the user's answers
+    const userAnswers = [];
 
-            input.addEventListener('change', () => {
-                tabs.forEach(otherTab => {
-                    const otherContent = otherTab.nextElementSibling;
-                    if (otherTab !== tab && !otherContent.hasAttribute('hidden')) {
-                        otherContent.setAttribute('hidden', '');
-                    }
-                });
+    // Function to display the questions and collect answers
+    function displayQuestions() {
+      const container = document.getElementById("quiz-container");
 
-                content.removeAttribute('hidden');
-            });
+      // Clear the container
+      container.innerHTML = "";
+
+      // Iterate over each question
+      questions.forEach((q, index) => {
+        const questionElement = document.createElement("p");
+        questionElement.textContent = q.question;
+        container.appendChild(questionElement);
+
+        // Create radio buttons for each answer choice
+        q.answers.forEach(answer => {
+          const label = document.createElement("label");
+          const radio = document.createElement("input");
+          radio.type = "radio";
+          radio.name = "question-" + index;
+          radio.value = answer.slice(0, 1).toLowerCase();
+
+          label.appendChild(radio);
+          label.appendChild(document.createTextNode(answer));
+          container.appendChild(label);
         });
-    </script>
+
+        // Add a line break after each question
+        container.appendChild(document.createElement("br"));
+      });
+
+      // Add a submit button
+      const submitButton = document.createElement("button");
+      submitButton.textContent = "Submit";
+      submitButton.addEventListener("click", calculateResult);
+      container.appendChild(submitButton);
+    }
+
+    // Function to calculate and display the result
+    function calculateResult() {
+      // Iterate over each question
+      questions.forEach((q, index) => {
+        const selectedOption = document.querySelector('input[name="question-' + index + '"]:checked');
+        
+        if (selectedOption) {
+          // Store the selected answer
+          userAnswers.push(selectedOption.value);
+        }
+      });
+
+      // Calculate the result based on the answers
+      // You can define your own logic here
+      let result = "Unknown";
+
+      if (userAnswers.length === questions.length) {
+        // Display the result
+        const resultContainer = document.getElementById("result-container");
+        resultContainer.textContent = "Your result is: " + result;
+      } else {
+        alert("Please answer all questions!");
+      }
+    }
+  </script>
 </head>
-
 <body>
-    <div>
-        <h4>6. What are runes? Summoner spells?</h4>
-        <div class="tabs">
-            <div class="tab">
-                <input type="radio" name="tab-group-1" id="tab1" checked>
-                <label for="tab1">Precision</label>
-                <div class="tab-content">
-                    <h4>Precision tree</h4>
-                    <p>Content</p>
-                </div>
-            </div>
+  <h1>Personality Test</h1>
+  <div id="quiz-container">
+    <!-- Questions and answers will be dynamically generated here -->
+  </div>
+  <div id="result-container"></div>
 
-            <div class="tab">
-                <input type="radio" name="tab-group-1" id="tab2">
-                <label for="tab2">Domination</label>
-                <div class="tab-content">
-                    <h4>Domination tree</h4>
-                    <p>Content </p>
-                </div>
-            </div>
-
-            <div class="tab">
-                <input type="radio" name="tab-group-1" id="tab3">
-                <label for="tab3">Sorcery</label>
-                <div class="tab-content">
-                    <h4>Sorcery tree</h4>
-                    <p>Content</p>
-                </div>
-            </div>
-
-            <div class="tab">
-                <input type="radio" name="tab-group-1" id="tab4">
-                <label for="tab4">Resolve</label>
-                <div class="tab-content">
-                    <h4>Resolve tree</h4>
-                    <p>Content</p>
-                </div>
-            </div>
-
-            <div class="tab">
-                <input type="radio" name="tab-group-1" id="tab5">
-                <label for="tab5">Inspiration</label>
-                <div class="tab-content">
-                    <h4>Inspiration tree</h4>
-                    <p>Content</p>
-                </div>
-            </div>
-        </div>
+  <script>
+    // Call the displayQuestions() function to start the test
+    displayQuestions();
+  </script>
 </body>
-
 </html>
