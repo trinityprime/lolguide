@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,300&family=Montserrat:wght@500&display=swap');
+/* REMEMBER TO CHANGE FONT TO DIGNITAS FONT */
 
 * {
   box-sizing: border-box;
@@ -12,7 +13,7 @@ body {
 
 .container {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto;   
 }
 
 #scroll-indicator {
@@ -40,6 +41,7 @@ body {
   background-color: black;
   color: #fff;
   padding: 20px;
+  padding-right: 60px;
   overflow-y: auto;
 }
 
