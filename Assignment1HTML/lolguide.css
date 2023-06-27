@@ -79,7 +79,8 @@ p,
 li,
 td,
 tr,
-h2 {
+h2,
+label {
   font-family: 'Barlow', sans-serif;
   color: whitesmoke;
   font-size: 18px;
@@ -258,75 +259,47 @@ table {
 }
 
 .tabs {
-  position: relative;
-  margin: 3rem 0;
-  background: #1abc9c;
-  height: 14.75rem;
-}
-
-.tabs::before,
-.tabs::after {
-  content: "";
-  display: table;
-}
-
-.tabs::after {
-  clear: both;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tab {
-  float: left;
-}
-
-.tab-switch {
-  display: none;
-}
-
-.tab-label {
-  position: relative;
-  display: block;
-  line-height: 2.75em;
-  height: 3em;
-  padding: 0 1.618em;
-  background: #1abc9c;
-  border-right: 0.125rem solid #16a085;
-  color: #fff;
+  display: inline-block;
+  margin-right: 10px;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 0 0 2px 0; 
+  background-color: transparent;
   cursor: pointer;
-  top: 0;
-  transition: all 0.25s;
+  position: relative;
+  padding: 10px 20px; 
+  transition: background-color 0.3s ease; 
 }
 
-.tab-label:hover {
-  top: -0.25rem;
-  transition: top 0.25s;
+.tab:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px; 
+  background-color: #fff; 
 }
 
 .tab-content {
-  height: 12rem;
-  position: absolute;
-  z-index: 1;
-  top: 2.75em;
-  left: 0;
-  padding: 1.618rem;
-  background: #fff;
-  color: #2c3e50;
-  border-bottom: 0.25rem solid #bdc3c7;
-  opacity: 0;
-  transition: all 0.35s;
+  display: none;
+  padding: 10px;
 }
 
-.tab-switch:checked+.tab-label {
-  background: #fff;
-  color: #2c3e50;
-  border-bottom: 0;
-  border-right: 0.125rem solid #fff;
-  transition: all 0.35s;
-  z-index: 1;
-  top: -0.0625rem;
+input[name^="tab-group"] {
+  display: none;
 }
 
-.tab-switch:checked+label+.tab-content {
-  z-index: 2;
-  opacity: 1;
-  transition: all 0.35s;
+input[name^="tab-group"]:checked + label {
+  background-color: transparent
 }
+
+input[name^="tab-group"]:checked ~ .tab-content {
+  display: block;
+}
+
