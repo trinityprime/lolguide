@@ -79,17 +79,19 @@ main {
 
 p,
 li,
-td,
+td, 
 tr,
 h2,
-label {
+label
+ {
   font-family: 'Barlow', sans-serif;
   color: whitesmoke;
   font-size: 18px;
 }
 
 h4,
-th {
+th,
+a {
   font-family: 'JetBrains Mono';
 }
 
@@ -111,6 +113,45 @@ th {
 li {
   color: whitesmoke;
 }
+
+#chapters-list {
+  display: inline-block;
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+#chap {
+  padding: 10px;
+}
+
+#chapters-list {
+  margin-bottom: 10px;
+}
+
+#chapters-list a {
+  color: black;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: yellow;
+}
+
+#chapters-list a:hover {
+  background-color: #FFEF00
+
+}
+
+#chapter-content {
+  margin-top: 20px;
+} 
 
 .stats {
   font-size: 1rem;
@@ -185,6 +226,7 @@ table {
 .herald {
   border-style: solid;
   border-width: 3px;
+  border-radius: 5px;
   padding: 1em;
   display: inline-block;
   text-align: left;
