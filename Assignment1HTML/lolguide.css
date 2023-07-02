@@ -95,10 +95,6 @@ a {
   font-family: 'JetBrains Mono';
 }
 
-h2 {
-  font-size: 5000000px;
-}
-
 h4 {
   color: yellow;
 }
@@ -136,6 +132,9 @@ li {
 #chapters-list a {
   color: black;
   text-decoration: none;
+  outline-style:solid;
+  outline-color: white;
+  outline-width: 2px;
   border-width: 1px;
   border-style: solid;
   border-color: #ccc;
@@ -185,7 +184,8 @@ caption {
 #herald,
 #heraldcharge,
 #csing,
-#shop {
+#shop,
+#mapnexus {
   display: block;
   margin-right: auto;
   margin-left: auto;
