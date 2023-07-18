@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,300&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap');
 /* REMEMBER TO CHANGE FONT TO DIGNITAS FONT */
 
 * {
@@ -13,18 +14,19 @@ html {
 
 body {
   margin: var(--top-spacing) auto;
-  background-color: #121212;
+  background-color: rgba(105,105,105,3);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url(images/web_background.jpg);
-
 }
 
-#whatislol,
-#pilotchar,
-#roleassign{
+#whatislol {
   background-color: #121212;
-  padding: 20px;
+  padding: 30px;
+}
+
+#whatislol {
+  border: 4px solid orange;
 }
 
 .container {
@@ -92,11 +94,11 @@ main {
 }
 
 #title {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "JetBrains Mono";
   color: black;
   font-size: 50px;
-  background-color: yellow;
   text-align: center;
+  text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white; 
 }
 
 p,
