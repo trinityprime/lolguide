@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,300&family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap');
-/* REMEMBER TO CHANGE FONT TO DIGNITAS FONT */
 
 * {
   box-sizing: border-box;
@@ -18,6 +17,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url(images/web_background.jpg);
+}
+
+#titlelogo {
+  width: 650px;
+  height: 350px;
+  margin: -80px 0px -60px 0px;
+  padding: 0;
 }
 
 #whatislol {
@@ -85,6 +91,9 @@ body {
 
 .content {
   text-align: center;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -143,14 +152,14 @@ li {
   border-color: whitesmoke;
   border-radius: 5px;
   padding: 30px;
+  margin-bottom: 10px;
+  background-color: #777;
+  
 }
 
 #chap {
   padding: 10px;
-}
-
-#chapters-list {
-  margin-bottom: 10px;
+  text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white; 
 }
 
 #chapters-list a {
@@ -165,6 +174,7 @@ li {
   border-radius: 5px;
   padding: 3px;
   background-color: yellow;
+
 }
 
 #chapters-list a:hover {
@@ -382,26 +392,12 @@ input[name^="tab-group"]:checked ~ .tab-content {
   display: block;
 }
 
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  transition: 0.4s;
+.spell-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.spell-text {
+  margin-left: 20px;
 }
