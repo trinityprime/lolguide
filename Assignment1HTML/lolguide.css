@@ -13,7 +13,7 @@ html {
 
 body {
   margin: var(--top-spacing) auto;
-  background-color: rgba(105,105,105,3);
+  background-color: rgba(105, 105, 105, 3);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url(images/web_background.jpg);
@@ -27,18 +27,16 @@ body {
 }
 
 #whatislol {
-  background-color: #121212;
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 30px;
-}
-
-#whatislol {
   border: 4px solid orange;
+  border-radius: 5px;
 }
 
 .container {
   width: 80%;
-  margin: 0 auto;   
-} 
+  margin: 0 auto;
+}
 
 #scroll-indicator {
   width: 100%;
@@ -61,27 +59,27 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px; 
+  height: 70px;
   background-color: black;
   color: #fff;
   transition: 0.5s;
   padding-right: 60px;
-  overflow-x: auto; 
+  overflow-x: auto;
   overflow-y: hidden;
 }
 
 .sidebar a {
-  display: inline-block; 
+  display: inline-block;
   color: #fff;
   padding: 10px;
   text-decoration: none;
-  border-right: 1px solid #777; 
+  border-right: 1px solid #777;
   font-size: 18px;
   font-family: "Barlow", sans-serif;
 }
 
 .sidebar a:last-child {
-  border-right: none; 
+  border-right: none;
 }
 
 .sidebar a:hover {
@@ -107,16 +105,15 @@ main {
   color: black;
   font-size: 50px;
   text-align: center;
-  text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white; 
+  text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
 }
 
 p,
 li,
-td, 
+td,
 tr,
 h2,
-label
- {
+label {
   font-family: 'Barlow', sans-serif;
   color: whitesmoke;
   font-size: 18px;
@@ -149,25 +146,24 @@ li {
   text-align: left;
   padding: 0;
   border-style: solid;
-  border-color: whitesmoke;
+  border-color: orange;
   border-radius: 5px;
   padding: 30px;
   margin-bottom: 10px;
-  background-color: #777;
-  
+  background-color: rgba(0, 0, 0, 0.6)
 }
 
 #chap {
   padding: 10px;
-  text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white; 
+  text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
 }
 
 #chapters-list a {
   color: black;
   text-decoration: none;
-  outline-style:solid;
-  outline-color: white;
-  outline-width: 2px;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 1px;
   border-width: 1px;
   border-style: solid;
   border-color: #ccc;
@@ -179,12 +175,11 @@ li {
 
 #chapters-list a:hover {
   background-color: #FFEF00
-
 }
 
 #chapter-content {
   margin-top: 20px;
-} 
+}
 
 .stats {
   font-size: 1rem;
@@ -340,6 +335,7 @@ table {
 #inspiration {
   margin-top: 20px;
 }
+
 .wrapper {
   max-width: 50rem;
   width: 100%;
@@ -357,12 +353,12 @@ table {
   margin-bottom: 10px;
   border-style: solid;
   border-color: #ccc;
-  border-width: 0 0 2px 0; 
+  border-width: 0 0 2px 0;
   background-color: transparent;
   cursor: pointer;
   position: relative;
-  padding: 10px 20px; 
-  transition: background-color 0.3s ease; 
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
 }
 
 .tab:before {
@@ -371,8 +367,8 @@ table {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px; 
-  background-color: #fff; 
+  height: 4px;
+  background-color: #fff;
 }
 
 .tab-content {
@@ -384,11 +380,11 @@ input[name^="tab-group"] {
   display: none;
 }
 
-input[name^="tab-group"]:checked + label {
+input[name^="tab-group"]:checked+label {
   background-color: transparent
 }
 
-input[name^="tab-group"]:checked ~ .tab-content {
+input[name^="tab-group"]:checked~.tab-content {
   display: block;
 }
 
@@ -400,4 +396,28 @@ input[name^="tab-group"]:checked ~ .tab-content {
 
 .spell-text {
   margin-left: 20px;
+}
+
+#ignite {
+  color: red;
+}
+
+#exhaust {
+  color: rgb(161, 161, 14)
+}
+
+#heal {
+  color: rgb(47, 255, 47);
+}
+
+#smite {
+  color: rgb(255, 184, 51)
+}
+
+#teleport {
+  color: rgb(221, 10, 221);
+}
+
+#flash {
+  color: #FFEF00;
 }
