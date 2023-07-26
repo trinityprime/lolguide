@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+	<title>Feedback</title>
+	<link rel="stylesheet" href="FormProcessor.css">
+</head>
+
+<body>
+	<header>
+		<div class="sidebar">
+			<nav>
+				<ul>
+					<a href="contact.html">&laquo; Go Back</a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="formOutput">
+
+		<script type="text/javascript">
+			document.getElementById("formOutput").innerHTML = "<h1>Thank you for your feedback!</h1><h2>You entered the following data:</h2>";
+			var formData = location.search;
+
+			formData = formData.substring(1, formData.length);
+			while (formData.indexOf("+") != -1) {
+				formData = formData.replace("+", " ");
+			}
+			formData = decodeURIComponent(formData);
+			var formArray = formData.split("&");
+			for (var i = 0; i < formArray.length; ++i) {
+				var formElement = document.createElement("p");
+				formElement.innerHTML = formArray[i] + "<br />";
+				document.getElementById("formOutput").appendChild(formElement);
+			}
+		</script>
+	</div>
+</body>
+
+</html>

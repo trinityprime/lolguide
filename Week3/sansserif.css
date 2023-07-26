@@ -1,0 +1,22 @@
+#header {
+    background-color:blue; color:white
+}
+#desc {
+    color:#404a14;
+}
+#verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+#Trebuchet_MS {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#Arial_Black {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#Arial_Tahoma {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    text-align: center;
+}

@@ -9,6 +9,7 @@
 html {
   --top-spacing: 90px;
   scroll-padding-top: var(--top-spacing);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,11 +32,6 @@ body {
   padding: 30px;
   border: 4px solid orange;
   border-radius: 5px;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
 }
 
 #scroll-indicator {
@@ -102,10 +98,10 @@ main {
 
 #title {
   font-family: "JetBrains Mono";
-  color: black;
+  color: orange;
   font-size: 50px;
   text-align: center;
-  text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 p,
@@ -218,6 +214,14 @@ caption {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+#healthmana {
+  padding-bottom: 10px;
+}
+
+#xayah {
+  padding-bottom: 20px;
 }
 
 #level {

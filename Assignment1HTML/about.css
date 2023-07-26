@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,300&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --top-spacing: 90px;
+    scroll-padding-top: var(--top-spacing);
+}
+
+body {
+    margin: var(--top-spacing) auto;
+    background-color: rgba(105, 105, 105, 3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(images/web_background.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p,
+li,
+ul {
+    font-family: 'Barlow', sans-serif;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+ul li {
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+ul li::before {
+    content: '>';
+    margin-right: 15px;
+    text-align: left;
+}
+
+li {
+    margin: 10px 0;
+}
+
+h4 {
+    font-family: 'JetBrains Mono';
+    color: yellow;
+    font-size: 20px;
+}
+
+h5 {
+    font-family: "JetBrains Mono";
+    color: yellow;
+    font-size: 19px;
+}
+
+#name {
+    color: rgb(255, 255, 0);
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: #fff;
+    transition: 0.5s;
+    padding-right: 60px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.sidebar a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #777;
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+}
+
+.sidebar a:last-child {
+    border-left: none;
+    border-right: none;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+main {
+    width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    font-family: "JetBrains Mono";
+    color: orange;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#whatislol {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border: 4px solid orange;
+    border-radius: 5px;
+}
+
+#boxesContainer {
+    display: flex;
+    padding: 5px;
+}
+
+.intro,
+.purpose {
+    width: 50%;
+    border: solid;
+    border-color: orange;
+    border-width: 3px;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+#nautgif {
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    margin-top: -30px;
+}
+
+#cute {
+    font-size: 15px;
+    margin-top: -30px;
+    margin-left: 10px;
+}

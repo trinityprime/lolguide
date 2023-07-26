@@ -8,15 +8,15 @@ window.addEventListener('scroll', function () {
 
 var lastScrollTop;
 navbar = document.getElementById('sidebar');
-window.addEventListener('scroll',function(){
-var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-if(scrollTop > lastScrollTop){
-sidebar.style.top='-80px';
-}
-else{
-sidebar.style.top='0';
-}
-lastScrollTop = scrollTop;
+window.addEventListener('scroll', function () {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    sidebar.style.top = '-80px';
+  }
+  else {
+    sidebar.style.top = '0';
+  }
+  lastScrollTop = scrollTop;
 });
 
 

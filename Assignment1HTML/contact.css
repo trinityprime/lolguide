@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,300&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --top-spacing: 90px;
+    scroll-padding-top: var(--top-spacing);
+}
+
+body {
+    margin: var(--top-spacing) auto;
+    background-color: rgba(105, 105, 105, 3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(images/web_background.jpg);
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: #fff;
+    transition: 0.5s;
+    padding-right: 60px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.sidebar a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #777;
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+}
+
+.sidebar a:last-child {
+    border-left: none;
+    border-right: none;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+main {
+    width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contact-area {
+    margin: 130px 400px;
+    background: linear-gradient(180deg, #6b2200, #95540e);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "JetBrains Mono";
+}
+
+.contact-title h1 {
+    color: #fff;
+    margin-bottom: 8px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.form-container {
+    background: transparent;
+    max-width: 550px;
+    margin: auto;
+}
+
+.form {
+    padding-bottom: 16px;
+    display: block;
+    width: 100%;
+}
+
+.form-name,
+.form-email,
+.form-message {
+    position: relative;
+}
+
+.form-name::before {
+    content: "\f007";
+    color: #D54C76;
+
+}
+
+.form-email::before {
+    content:  "\f0e0";
+    color: #D54C76;
+}
+
+.form-message::before {
+    content: "\f1d8";
+    color: #D54C76;
+}
+
+.form-name::before,
+.form-email::before,
+.form-message::before {
+    font-family: 'fontAwesome';
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+    margin-top: 16px;
+    background-color: transparent;
+    position: relative;
+    padding: 10px 16px 10px 30px;
+    color: #fff;
+    font-family: "JetBrains Mono";
+}
+
+.form input:focus,
+.form textarea:focus,
+.form input:hover,
+.form textarea:hover {
+    border-color: #ffffff;
+}
+
+.form textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+    margin-top: 16px;
+    height: 150px;
+    background-color: transparent;
+    padding: 10px 16px 10px 30px;
+    color: #fff;
+    font-family: "JetBrains Mono";
+}
+
+.center-align button {
+    border: 1px solid #D54C76;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    padding: 10px 45px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #ff7300;
+    text-transform: uppercase;
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.center-align {
+    text-align: center;
+}

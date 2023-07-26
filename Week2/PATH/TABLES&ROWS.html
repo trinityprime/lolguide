@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOCUMENT</title>
+</head>
+
+<body>
+  <a href="FORMS.html">FORM</a>
+  <a href="favourites.html">VIDEO
+  </a>
+  <br><br>
+  <table border="1">
+    <caption><i>IMPORTANT INFO</i></caption>
+    <tr>
+      <th>AdmNo</th>
+      <th>Name</th>
+      <th>PEM</th>
+      <th>Mentor</th>
+    </tr>
+    <tr>
+      <td>141000A</td>
+      <td>Mary Lim</td>
+      <td>BT1401</td>
+      <td rowspan="2">Mr Tan</td>
+    </tr>
+    <tr>
+      <td>142000B</td>
+      <td>Luke Sun</td>
+      <td>BT1401</td>
+    </tr>
+  </table>
+  <br><br>
+  <table border="1">
+    <caption><em>SKT T1</em></caption>
+    <tr>
+      <th>Player</th>
+      <th>Role</th>
+      <th>Signature</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Faker</td>
+      <td>Mid</td>
+      <td>LeBlanc</td>
+      <td>26</td>
+    <tr>
+      <td>Oner</td>
+      <td>Jungler</td>
+      <td>Lee Sin</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Zeus</td>
+      <td>Top</td>
+      <td>Jayce</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Gumayusi</td>
+      <td>ADC</td>
+      <td>Varus</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Keria</td>
+      <td>Support</td>
+      <td>Thresh</td>
+      <td>20</td>
+    </tr>
+  </table>
+  <br>
+  <fieldset>
+    <legend>SKT T1 SURVEY</legend>
+    <form action="FormProcessor.html" method="get">
+
+      <label for="text">What is your IGN?: </label>
+      <input type="text" name="name" id="name" required>
+      <br><br>
+
+      <label for="player">Who is your favourite Mid?: </label>
+      <select name="player" id="list" required>
+        <option value="">Faker</option>
+        <option value="">Faker</option>
+        <option value="">Faker</option>
+      </select>
+      <br><br>
+
+      <label for="checkbox">Tick the 3 best T1 members: </label><br>
+      <input type="checkbox" name="SKT T1 Faker" id="SKT T1 Faker">SKT T1 Faker<br>
+      <input type="checkbox" name="T1 Faker" id="T1 Faker">T1 Faker<br>
+      <input type="checkbox" name="Faker" id="Faker">Faker<br><br>
+
+      <label for="radio">Who is the GOAT?: </label><br>
+      <input type="radio" name="goat" id="Faker">Faker<br>
+      <input type="radio" name="goat" id="Faker">Faker<br>
+      <input type="radio" name="goat" id="Faker">Faker<br><br>
+
+      <label for="t1">What is the T1 website?: </label>
+      <input type="url" name="t1" id="t1website">
+      <br><br>
+
+      <label for="email">What is your email?: </label>
+      <input type="email" name="email" id="email" required>
+      <br><br>
+
+      <label for="password">What is your password?: </label>
+      <input type="password" name="password" id="password">
+      <br><br>
+
+      <label for="age">How old is Faker?: </label>
+      <input type="number" name="age" id="agefaker" min="22" max="22">
+      <br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </fieldset>
+</body>
+
+</html>

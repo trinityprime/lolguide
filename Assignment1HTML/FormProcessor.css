@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,300&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap');
+
+
+* {
+    box-sizing: border-box; 
+}
+
+html {
+    --top-spacing: 90px;
+    scroll-padding-top: var(--top-spacing);
+}
+
+body {
+    margin: var(--top-spacing) auto;
+    background-color: rgba(105, 105, 105, 3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(images/web_background.jpg);
+    
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: #fff;
+    transition: 0.5s;
+    padding-right: 60px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.sidebar a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #777;
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+}
+
+.sidebar a:last-child {
+    border-left: none;
+    border-right: none;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+#formOutput {
+    font-family: "JetBrains Mono";
+    color: white;
+    text-align: center;
+    padding: 0;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
