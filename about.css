@@ -157,6 +157,12 @@ main {
     padding-left: 10px
 }
 
+.socials img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
 #discord {
     height: 160px;
     padding-bottom: 20px;

@@ -61,10 +61,9 @@ body {
   color: #fff;
   transition: 0.5s;
   padding-right: 60px;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-  z-index: 2;
+  z-index: 1;
 }
 
 .sidebar a {
@@ -84,6 +83,62 @@ body {
 .sidebar a:hover {
   background-color: #555;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbutton {
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+}
+
+.dropchap {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 150px;
+  z-index: 2;
+  top: 0; 
+  left: 110%; 
+  white-space: nowrap; 
+}
+
+.dropdown:hover .dropchap {
+  display: flex; 
+  flex-direction: row;
+}
+
+.dropchap a {
+  color: #fff;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+}
+
+.dropchap a:hover {
+  background-color: #555;
+}
+
+/* Set a white border to the left of the dropdown menu */
+.dropchap::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px; /* Adjust this value to control the distance of the border */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+
 
 .content {
   text-align: center;
