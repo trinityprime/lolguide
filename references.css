@@ -19,7 +19,6 @@ body {
     background-image: url(images/web_background.jpg);
 }
 
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -39,22 +38,22 @@ body {
     color: #fff;
     padding: 10px;
     text-decoration: none;
-    border: 1px solid #777;
+    border-right: 1px solid #777;
     font-size: 18px;
     font-family: "Barlow", sans-serif;
 }
 
 .sidebar a:last-child {
-    border-left: none;
     border-right: none;
 }
+
 .sidebar a:hover {
     background-color: #555;
 }
+
 
 main {
     width: 60rem;
     margin-left: auto;
     margin-right: auto;
 }
-

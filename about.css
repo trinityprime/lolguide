@@ -82,19 +82,19 @@ h5 {
     color: #fff;
     padding: 10px;
     text-decoration: none;
-    border: 1px solid #777;
+    border-right: 1px solid #777;
     font-size: 18px;
     font-family: "Barlow", sans-serif;
 }
 
 .sidebar a:last-child {
-    border-left: none;
     border-right: none;
 }
 
 .sidebar a:hover {
     background-color: #555;
 }
+
 
 main {
     width: 60rem;
@@ -129,10 +129,57 @@ main {
     border-color: orange;
     border-width: 3px;
     margin-left: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+.other {
+    border: solid;
+    border-color: orange;
+    border-width: 3px;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.socials img {
+    margin: 20px;
+    padding-left: 10px
+}
+
+#discord {
+    height: 160px;
+    padding-bottom: 20px;
+}
+
+#opgg {
+    height: 150px;
+    width: 220px;
+    border-radius: 30px;
+}
+
+#steam {
+    height: 150px;
+}
+
+#github {
+    height: 150px;
+    border-radius: 30px;
+}
+
+.text {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #nautgif {
