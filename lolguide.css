@@ -62,7 +62,6 @@ body {
   transition: 0.5s;
   padding-right: 60px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -484,3 +483,33 @@ input[name^="tab-group"]:checked~.tab-content {
 #flash {
   color: #FFEF00;
 }
+
+.conclusion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.champs img {
+  margin: 0 25px;
+  max-width: 100%;
+  height: auto;
+}
+
+.runes img {
+  margin: 0 13px;
+  max-width: 100%;
+  height: auto;
+  width: 150px;
+}
+
+.sums img {
+  margin: 0 13px;
+  max-width: 100%;
+  height: auto;
+  padding-right: 20px;
+  width: 100px;
+  padding-top: 20px;
+}
+
+
