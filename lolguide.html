@@ -117,7 +117,7 @@
               your abilities</p>
           </div>
 
-          <div id="roleassign">
+          <div class="roleassign">
             <h4>3. ROLE ASSIGNMENTS</h4>
             <p>In a standard game of League of Legends, each of the five players on a team is assigned to one of the
               five
@@ -128,7 +128,7 @@
             <p>I will give a brief description of all 5 roles in league of legends, so see which one you prefer the
               most,
               or just go ahead and try them all!</p>
-            <table border="1" id="champtable">
+            <table border="1" class="champtable">
               <tr>
                 <th>Role</th>
                 <th>Description</th>
@@ -171,7 +171,7 @@
             </table>
           </div>
           <br>
-          <div id="champtable2">
+          <div class="champtable2">
             <table border="1">
               <caption><em>Recommended beginner champions</em></caption>
               <tr>
@@ -249,427 +249,429 @@
             <p>It can look quite complicated at first, but we will just be focussing on the top part of the scoreboard.
             </p>
             <div class="towers">
-              <img src="images/turret.png" id="turretref" height="70" width="300" />
+              <img src="images/turret.png" id="score" />
               <p>The white area shows the number of structures that your team have destroyed.</p>
-              <img src="images/tower.png" height="400" width="300" />
-              <img src="images/inhibitor.png" id="inhib" height="300" width="300" />
+              <img src="images/tower.png" id="tower" />
+              <img src="images/inhibitor.png" id="tower" />
             </div>
+          </div>
+          <br>
+
+
+          <div class="dragons">
+            <img src="images/dragonref.jpg" id="dragonref" />
+            <p>The red area shows the number of dragons that your team have slayed. (Allied team: Left, Enemy team:
+              Right)
+            </p>
+            <p>Since dragons require quite a bit of explaining, you can watch this video to gain a basic understanding
+              of
+              this objective.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1xVbnRdvONA"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <p>Basically, The first dragon will always appear at 5:00 in every LoL match. But if you slay it in 7:55
+              for
+              example, the next dragon will spawn at 13:55.</p>
+            <p>There is no way of controlling which dragon is going to spawn next in LoL. You can only check which
+              drake
+              will be next either in the logo on the dragon pit or when you press “TAB”.</p>
             <br>
 
+          </div>
+          <div class="soul">
+            <p>The orange area represents the current dragon soul. When it lights up, it shows the type of dragon soul
+              that your team currently has.</p>
+            <p>If your team collects 4 dragon buffs (no matter the combination), you'll get the dragon Soul buff of
+              the
+              third dragon’s type (right to left).</p>
+            <p>The Soul is a powerful permanent buff that often determines whether you'll win the game or not.</p>
+            <p>If you want to know more about what each dragon soul does, <a
+                href="https://www.dexerto.com/league-of-legends/all-league-of-legends-buffs-baron-chemtech-hextech-dragons-1742106/">check
+                out this article!</a></p>
+          </div>
+          <br>
 
-            <div class="dragons">
-              <img src="images/dragonref.jpg" id="dragonref" wdith="100" />
-              <p>The red area shows the number of dragons that your team have slayed. (Allied team: Left, Enemy team:
-                Right)
-              </p>
-              <p>Since dragons require quite a bit of explaining, you can watch this video to gain a basic understanding
-                of
-                this objective.</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/1xVbnRdvONA"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-              <p>Basically, The first dragon will always appear at 5:00 in every LoL match. But if you slay it in 7:55
-                for
-                example, the next dragon will spawn at 13:55.</p>
-              <p>There is no way of controlling which dragon is going to spawn next in LoL. You can only check which
-                drake
-                will be next either in the logo on the dragon pit or when you press “TAB”.</p>
-              <br>
+          <div class="baron">
+            <p>The purple area represents the timer for when the Baron Nashor will spawn. (20 minutes)</p>
+            <p>Baron is the most powerful monster in Summoner's Rift so you'll need multiple team members to slay it
+              unless a match goes on for a very long time</p>
+            <p>Killing the Baron grants the following buff:</p>
+            <img src="images/nashor.png" width="200" height="200" />
+            <img src="images/baronbuff.jpg" id="baronbuff" />
+            <p>If you do not outright win by pushing with Baron minions, the enemy base will likely be destroyed
+              enough to
+              make your future attempts much easier.</p>
+          </div>
 
+          <div class="elder">
+            <p>The yellow area represents the timer for when Elder Dragon will spawn (35:00 minutes or six minutes
+              after
+              the soul is taken.)</p>
+            <img src="images/elder.jpg" height="300" />
+            <img src="images/elderbuff.png" id="elderbuff" height="200" />
+            <p>Once you are able to kill the elder dragon and get the Aspect of the Dragon's buff (Elder buff), it's
+              pretty much game over.</p>
+            <p>This buff basically instantly kills any enemy lower than 20% health, unless they become invulnerable.
+            </p>
+          </div>
+
+          <div class="herald">
+            <p>One objective that was not included is the Rift Herald. The Rift Herald is a monster that resides in
+              the
+              Baron pit before Baron is slain, and spawns 8 minutes in.</p>
+            <img src="images/riftherald.png" id="herald" width="640" height="380" />
+            <img src="media/riftheraldcharge.gif" id="heraldcharge" />
+            <p>The Herald is quite tanky so you may need multiple members of your team to kill it.</p>
+            <p>A crucial tip to remember is that it has a weak spot on it's back that will inflict additional damage
+              if
+              you hit it.</p>
+            <img src="images/heralddrop.png" id="heralddrop" width="400" height="200" />
+            <p>After a team kills the Herald, a purple item, called Eye of the Herald (right), will drop that one
+              allied
+              team member can pick up</p>
+            <p>The Eye of the Herald will remain in your inventory for 4 minutes and expire if not used.</p>
+            <p>When used, the Eye will summon the Herald to fight for your team by attacking enemy structures until it
+              dies. Refer to the gif attached</p>
+            <p>Something more general to note is that the dragon pit and baron pit are 2 different locations. The
+              baron
+              pit is near top lane, and the dragon pit is near bot lane.</p>
+          </div>
+
+          <div id="gold">
+            <h4>5. WHAT DOES GOLD DO?</h4>
+            <p>Gold is the in-game currency of League of Legends. It is used to buy items in the shop that provide
+              champions with bonus stats and abilities, which in turn is one of the main ways for champions to
+              increase
+              their power over the course of a game.</p>
+            <p>At the beginning of the game, champions are given 500 starting gold to buy items, and can receive more
+              gold
+              through various means.</p>
+            <p>Since this is a beginners' guide, I will only be touching on the ways to earn gold and how to purchase
+              items for your champion.</p>
+
+            <h4>MINIONS AND JUNGLE MONSTERS</h4>
+            <p>Gold can be earned by dealing the killing blow ("last hit") to enemy minions and neutral monsters in
+              the
+              jungle. The gold earned from minion kills is dependent on the game time. As the game progresses, each
+              minion
+              is worth more, while jungle monsters award the same amount of gold.</p>
+            <img src="media/cs.gif" id="csing" />
+            <p>Certain monsters give gold globally, (Rift herald, Dragons, Baron) providing gold for the entire team.
+              The
+              champion who lands the killing blow receives additional gold.</p>
+
+            <h4>CHAMPIONS</h4>
+            <p>Likewise, killing enemy champions and assisting in killing enemy champions also grant gold. A kill is
+              300
+              gold, an assist is 150 gold, split amongst all the assistants.</p>
+            <p>As you slay more and more enemies, you will be worth more gold if the enemy manages to slay you. This
+              would
+              reset once you are slain.
+            <p>If you get slain repeatedly, you will be worth less gold to the enemy. This would reset if you slay an
+              enemy.
+
+            <h4>TURRET AND TURRET PLATINGS</h4>
+            <p>Damaging a tower decreases it's total heath pool, and when you destroy 1 plate from it, it rewards 175
+              gold, split amongst teammates near the tower (local gold). Destroying a tower awards 50 gold to all
+              teammates, and 250 local gold.</p>
+            <img src="images/plating.png" id="plating" />
+            <p>Do note that tower plates disappear 14 minutes into the game, so make sure to utilise the Rift herald
+              to
+              get as many tower plates as possible.</p>
+
+            <h4>SPENDING GOLD</h4>
+            <p>To spend your gold, you need to be at your spawn point and open up your shop menu (default hotkey is
+              "P")
+            </p>
+            <img src="images/shop.png" id="shop" height="450" width="725" />
+            <p>This guide isn't going to go too in depth on what items to buy as which champion, but you should always
+              be
+              spending your gold.</p>
+            <p>Imagine you are in top lane and kill your lane opponent 1 time and dont spend the gold that you get
+              from
+              the kill. You decide to stay in lane. When your lane opponent comes back, he has spent his gold from
+              killing
+              minions to buy items and is going to come back even stronger than you.</p>
+            <p>Thus by spending your gold, you maintain a lead against your opponents.</p>
+          </div>
+
+          <div id="runesandsums">
+            <h4>6. WHAT ARE RUNES? SUMMONER SPELLS?</h4>
+            <p>Runes are enhancements that add new abilities or buffs to your champion. You can choose your loadout of
+              runes before the match begins, or during champion select. </p>
+            <img src="images/Runes.jpg" />
+            <p>Click on the tabs below to see a brief explanation on each of the 5 rune paths you can choose from</p>
+            <div class="tabs">
+              <div class="tab">
+                <input type="radio" name="tab-group-1" id="tab1" checked>
+                <label for="tab1">Precision</label>
+                <div class="tab-content">
+                  <h4>Precision tree - Improved attacks and sustained damage</h4>
+                  <p>
+                  <ul>
+                    <li>Focuses on empowering auto-attacks making it ideal for ranged carries like Ashe or a melee
+                      fighter
+                      like Tryndamere.</li>
+                    <li>Example: Press the Attack rewards you for continuously attacking the same target by increasing
+                      your overall damage output.</li>
+                  </ul>
+                  <img src="images/Precision.jpg" id="precision" />
+                  </p>
+                </div>
+              </div>
+
+              <div class="tab">
+                <input type="radio" name="tab-group-1" id="tab2">
+                <label for="tab2">Domination</label>
+                <div class="tab-content">
+                  <h4>Domination tree - Burst damage and target access</h4>
+                  <p>
+                  <ul>
+                    <li>Improves your ability to instantly burst or kill a target, it’s no surprise that you’ll often
+                      see
+                      assassins like Katarina or Talon take Domination. </li>
+                    <li>Example: Predator grants you a huge burst of movement speed to allow you to quickly chase down
+                      your prey.</li>
+                    <img src="images/Domination.jpg" id="domination" />
+                  </ul>
+                  </p>
+                </div>
+              </div>
+
+              <div class="tab">
+                <input type="radio" name="tab-group-1" id="tab3">
+                <label for="tab3">Sorcery</label>
+                <div class="tab-content">
+                  <h4>Sorcery tree - Empowered abilities and resource manipulation</h4>
+                  <p>
+                  <ul>
+                    <li>Sorcery augments your abilities but also provides a good amount of utility. It’s most commonly
+                      taken by mages and casters like Karma or Lux.</li>
+                    <li>Example: Summon Aery improves the punch of your spells and also increases the potency of
+                      supportive spells by shielding an ally you cast on.</li>
+                    <img src="images/Sorcery.jpg" id="sorcery" />
+                  </ul>
+                  </p>
+                </div>
+              </div>
+
+              <div class="tab">
+                <input type="radio" name="tab-group-1" id="tab4">
+                <label for="tab4">Resolve</label>
+                <div class="tab-content">
+                  <h4>Resolve tree - Durability and crowd control</h4>
+                  <p>
+                  <ul>
+                    <li>If you are looking to bolster your defensive capabilities, this is your rune. Beefy tanks and
+                      engagers like Nautilus and Leona love the Resolve tree</li>
+                    <li>Example: Aftershock provides a burst of bonus armor and magic resist if you immobilize an
+                      enemy.
+                    </li>
+                    <img src="images/Resolve.jpg" id="resolve" />
+                  </ul>
+                  </p>
+                </div>
+              </div>
+
+              <div class="tab">
+                <input type="radio" name="tab-group-1" id="tab5">
+                <label for="tab5">Inspiration</label>
+                <div class="tab-content">
+                  <h4>Inspiration tree - Creative tools and rule bending</h4>
+                  <p>
+                  <ul>
+                    <li>Inspiration is all about breaking the rules with wacky powers and capabilities. It can be used
+                      by
+                      many different champions but is very situational.</li>
+                    <li>Example: Unsealed Spellbook allows you to switch your summoner spells to other ones, rewarding
+                      your ability to adapt and think ahead.</li>
+                    <img src="images/Inspiration.jpg" id="inspiration" />
+                  </ul>
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="soul">
-              <p>The orange area represents the current dragon soul. When it lights up, it shows the type of dragon soul
-                that your team currently has.</p>
-              <p>If your team collects 4 dragon buffs (no matter the combination), you'll get the dragon Soul buff of
-                the
-                third dragon’s type (right to left).</p>
-              <p>The Soul is a powerful permanent buff that often determines whether you'll win the game or not.</p>
-              <p>If you want to know more about what each dragon soul does, <a
-                  href="https://www.dexerto.com/league-of-legends/all-league-of-legends-buffs-baron-chemtech-hextech-dragons-1742106/">check
-                  out this article!</a></p>
-            </div>
-            <br>
 
-            <div class="baron">
-              <p>The purple area represents the timer for when the Baron Nashor will spawn. (20 minutes)</p>
-              <p>Baron is the most powerful monster in Summoner's Rift so you'll need multiple team members to slay it
-                unless a match goes on for a very long time</p>
-              <p>Killing the Baron grants the following buff:</p>
-              <img src="images/nashor.png" width="200" height="200" />
-              <img src="images/baronbuff.jpg" id="baronbuff" />
-              <p>If you do not outright win by pushing with Baron minions, the enemy base will likely be destroyed
-                enough to
-                make your future attempts much easier.</p>
-            </div>
-
-            <div class="elder">
-              <p>The yellow area represents the timer for when Elder Dragon will spawn (35:00 minutes or six minutes
-                after
-                the soul is taken.)</p>
-              <img src="images/elder.jpg" height="300" />
-              <img src="images/elderbuff.png" id="elderbuff" height="200" />
-              <p>Once you are able to kill the elder dragon and get the Aspect of the Dragon's buff (Elder buff), it's
-                pretty much game over.</p>
-              <p>This buff basically instantly kills any enemy lower than 20% health, unless they become invulnerable.
-              </p>
-            </div>
-
-            <div class="herald">
-              <p>One objective that was not included is the Rift Herald. The Rift Herald is a monster that resides in
-                the
-                Baron pit before Baron is slain, and spawns 8 minutes in.</p>
-              <img src="images/riftherald.png" id="herald" width="640" height="380" />
-              <img src="media/riftheraldcharge.gif" id="heraldcharge" />
-              <p>The Herald is quite tanky so you may need multiple members of your team to kill it.</p>
-              <p>A crucial tip to remember is that it has a weak spot on it's back that will inflict additional damage
-                if
-                you hit it.</p>
-              <img src="images/heralddrop.png" id="heralddrop" width="400" height="200" />
-              <p>After a team kills the Herald, a purple item, called Eye of the Herald (right), will drop that one
-                allied
-                team member can pick up</p>
-              <p>The Eye of the Herald will remain in your inventory for 4 minutes and expire if not used.</p>
-              <p>When used, the Eye will summon the Herald to fight for your team by attacking enemy structures until it
-                dies. Refer to the gif attached</p>
-              <p>Something more general to note is that the dragon pit and baron pit are 2 different locations. The
-                baron
-                pit is near top lane, and the dragon pit is near bot lane.</p>
-            </div>
-
-            <div id="gold">
-              <h4>5. WHAT DOES GOLD DO?</h4>
-              <p>Gold is the in-game currency of League of Legends. It is used to buy items in the shop that provide
-                champions with bonus stats and abilities, which in turn is one of the main ways for champions to
-                increase
-                their power over the course of a game.</p>
-              <p>At the beginning of the game, champions are given 500 starting gold to buy items, and can receive more
-                gold
-                through various means.</p>
-              <p>Since this is a beginners' guide, I will only be touching on the ways to earn gold and how to purchase
-                items for your champion.</p>
-
-              <h4>MINIONS AND JUNGLE MONSTERS</h4>
-              <p>Gold can be earned by dealing the killing blow ("last hit") to enemy minions and neutral monsters in
-                the
-                jungle. The gold earned from minion kills is dependent on the game time. As the game progresses, each
-                minion
-                is worth more, while jungle monsters award the same amount of gold.</p>
-              <img src="media/cs.gif" id="csing" />
-              <p>Certain monsters give gold globally, (Rift herald, Dragons, Baron) providing gold for the entire team.
-                The
-                champion who lands the killing blow receives additional gold.</p>
-
-              <h4>CHAMPIONS</h4>
-              <p>Likewise, killing enemy champions and assisting in killing enemy champions also grant gold. A kill is
-                300
-                gold, an assist is 150 gold, split amongst all the assistants.</p>
-              <p>As you slay more and more enemies, you will be worth more gold if the enemy manages to slay you. This
-                would
-                reset once you are slain.
-              <p>If you get slain repeatedly, you will be worth less gold to the enemy. This would reset if you slay an
-                enemy.
-
-              <h4>TURRET AND TURRET PLATINGS</h4>
-              <p>Damaging a tower decreases it's total heath pool, and when you destroy 1 plate from it, it rewards 175
-                gold, split amongst teammates near the tower (local gold). Destroying a tower awards 50 gold to all
-                teammates, and 250 local gold.</p>
-              <img src="images/plating.png" id="plating" />
-              <p>Do note that tower plates disappear 14 minutes into the game, so make sure to utilise the Rift herald
-                to
-                get as many tower plates as possible.</p>
-
-              <h4>SPENDING GOLD</h4>
-              <p>To spend your gold, you need to be at your spawn point and open up your shop menu (default hotkey is
-                "P")
-              </p>
-              <img src="images/shop.png" id="shop" height="450" width="725" />
-              <p>This guide isn't going to go too in depth on what items to buy as which champion, but you should always
+            <div>
+              <p>The image below shows the runes that you can choose from within the precision rune tree. Runes will
                 be
-                spending your gold.</p>
-              <p>Imagine you are in top lane and kill your lane opponent 1 time and dont spend the gold that you get
-                from
-                the kill. You decide to stay in lane. When your lane opponent comes back, he has spent his gold from
-                killing
-                minions to buy items and is going to come back even stronger than you.</p>
-              <p>Thus by spending your gold, you maintain a lead against your opponents.</p>
+                different for each rune tree.</p>
+              <p>You can only pick one keystone (main rune), and 1 lesser runes for each slot.</p>
+              <img src="images/rune page.png" width="900px" />
+              <p>Each rune page contains runes from two paths: one primary and one secondary.</p>
+              <p>The primary path has one keystone and three lesser runes. The secondary path has two lesser runes</p>
+              <p>This is what you would see when you are in game, selecting your runes. In this example, the sorcery
+                tree
+                is chosen and arcane comet is the keystone. The player also chose lesser runes from the domination
+                tree.
+              </p>
+              <img src="images/sorcdom.jpg" />
             </div>
+            <div>
+              <h4>SUMMONER SPELLS</h4>
+              <p>Beyond their QWER abilities, every summoner also must choose two summoner spells for their champion.
+              </p>
+              <p>Summoner spells act as two additional abilities with their own purposes and cooldowns.</p>
+              <p>I'll be covering the 6 most important summoner spells that you will most likely be using in an actual
+                game.</p>
 
-            <div id="runesandsums">
-              <h4>6. WHAT ARE RUNES? SUMMONER SPELLS?</h4>
-              <p>Runes are enhancements that add new abilities or buffs to your champion. You can choose your loadout of
-                runes before the match begins, or during champion select. </p>
-              <img src="images/Runes.jpg" />
-              <p>Click on the tabs below to see a brief explanation on each of the 5 rune paths you can choose from</p>
-              <div class="tabs">
-                <div class="tab">
-                  <input type="radio" name="tab-group-1" id="tab1" checked>
-                  <label for="tab1">Precision</label>
-                  <div class="tab-content">
-                    <h4>Precision tree - Improved attacks and sustained damage</h4>
-                    <p>
-                    <ul>
-                      <li>Focuses on empowering auto-attacks making it ideal for ranged carries like Ashe or a melee
-                        fighter
-                        like Tryndamere.</li>
-                      <li>Example: Press the Attack rewards you for continuously attacking the same target by increasing
-                        your overall damage output.</li>
-                    </ul>
-                    <img src="images/Precision.jpg" id="precision" />
-                    </p>
-                  </div>
+              <div class="spell-container">
+                <img src="images/flash.png" id="flash" height="70px" width="70px">
+                <div class="spell-text">
+                  <p>The <span id="flash">"Flash"</span> summoner spell:</p>
+                  <p>Flash is by far the most popular summoner spell. It allows you to blink a short distance in any
+                    direction (including over walls).</p>
                 </div>
-
-                <div class="tab">
-                  <input type="radio" name="tab-group-1" id="tab2">
-                  <label for="tab2">Domination</label>
-                  <div class="tab-content">
-                    <h4>Domination tree - Burst damage and target access</h4>
-                    <p>
-                    <ul>
-                      <li>Improves your ability to instantly burst or kill a target, it’s no surprise that you’ll often
-                        see
-                        assassins like Katarina or Talon take Domination. </li>
-                      <li>Example: Predator grants you a huge burst of movement speed to allow you to quickly chase down
-                        your prey.</li>
-                      <img src="images/Domination.jpg" id="domination" />
-                    </ul>
-                    </p>
-                  </div>
+              </div>
+              <hr>
+              <div class="spell-container">
+                <img src="images/teleport.jpg" id="teleport" height="70px" width="70px" />
+                <div class="spell-text">
+                  <p>The <span id="teleport">"Teleport"</span> summoner spell:</p>
+                  <p>This summoner spell allows you to instantly teleport to an allied tower or ward after channeling
+                    for 4 seconds.</p>
+                  <p>This is most used when playing top or mid lane.</p>
                 </div>
-
-                <div class="tab">
-                  <input type="radio" name="tab-group-1" id="tab3">
-                  <label for="tab3">Sorcery</label>
-                  <div class="tab-content">
-                    <h4>Sorcery tree - Empowered abilities and resource manipulation</h4>
-                    <p>
-                    <ul>
-                      <li>Sorcery augments your abilities but also provides a good amount of utility. It’s most commonly
-                        taken by mages and casters like Karma or Lux.</li>
-                      <li>Example: Summon Aery improves the punch of your spells and also increases the potency of
-                        supportive spells by shielding an ally you cast on.</li>
-                      <img src="images/Sorcery.jpg" id="sorcery" />
-                    </ul>
-                    </p>
-                  </div>
+              </div>
+              <hr>
+              <div class="spell-container">
+                <img src="images/smite.png" id="smite" height="70px" width="70px" />
+                <div class="spell-text">
+                  <p>The <span id="smite">"Smite"</span> summoner spell:</p>
+                  <p>Smite allows you to instantly cast a high burst damage spell upon a minion, monster, objectives,
+                    or pets (a minion controlled by a champion's abilities).</p>
+                  <p>This is a jungler’s core summoner spell and is required to play the role.</p>
                 </div>
-
-                <div class="tab">
-                  <input type="radio" name="tab-group-1" id="tab4">
-                  <label for="tab4">Resolve</label>
-                  <div class="tab-content">
-                    <h4>Resolve tree - Durability and crowd control</h4>
-                    <p>
-                    <ul>
-                      <li>If you are looking to bolster your defensive capabilities, this is your rune. Beefy tanks and
-                        engagers like Nautilus and Leona love the Resolve tree</li>
-                      <li>Example: Aftershock provides a burst of bonus armor and magic resist if you immobilize an
-                        enemy.
-                      </li>
-                      <img src="images/Resolve.jpg" id="resolve" />
-                    </ul>
-                    </p>
-                  </div>
+              </div>
+              <hr>
+              <div class="spell-container">
+                <img src="images/heal.jpg" id="heal" height="70px" width="70px" />
+                <div class="spell-text">
+                  <p>The <span id="heal">"Heal"</span> summoner spell:</p>
+                  <p>Heal instantly replenishes some of your health (based on your level), as well as of another ally
+                    near you.</p>
+                  <p>This is most commonly seen in the bot lane by the ADC role or sometimes the Support role. It
+                    heals two allies at once, giving it more value there compared to other roles.</p>
                 </div>
-
-                <div class="tab">
-                  <input type="radio" name="tab-group-1" id="tab5">
-                  <label for="tab5">Inspiration</label>
-                  <div class="tab-content">
-                    <h4>Inspiration tree - Creative tools and rule bending</h4>
-                    <p>
-                    <ul>
-                      <li>Inspiration is all about breaking the rules with wacky powers and capabilities. It can be used
-                        by
-                        many different champions but is very situational.</li>
-                      <li>Example: Unsealed Spellbook allows you to switch your summoner spells to other ones, rewarding
-                        your ability to adapt and think ahead.</li>
-                      <img src="images/Inspiration.jpg" id="inspiration" />
-                    </ul>
-                    </p>
-                  </div>
+              </div>
+              <hr>
+              <div class="spell-container">
+                <img src="images/exhaust.jpg" id="exhaust" height="70px" width="70px" />
+                <div class="spell-text">
+                  <p>The <span id="exhaust">"Exhaust"</span> summoner spell:</p>
+                  <p>Exhaust slows a champion and reduces their damage output by 35% over 3 seconds.</p>
+                  <p>This is primarily used defensively but can be used as a crowd control option for chasing
+                    opponents.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="spell-container">
+                <img src="images/ignite.jpg" id="ignite" height="70px" width="70px" />
+                <div class="spell-text">
+                  <p>The <span id="ignite">"Ignite"</span> summoner spell:</p>
+                  <p>Ignite is a spell that lasts for 5 seconds, inflicts burning damage, and reduces healing.</p>
+                  <p>It can often help you secure a kill as an enemy is trying to escape if you’re able to land it in
+                    time.</p>
                 </div>
               </div>
 
-              <div>
-                <p>The image below shows the runes that you can choose from within the precision rune tree. Runes will
-                  be
-                  different for each rune tree.</p>
-                <p>You can only pick one keystone (main rune), and 1 lesser runes for each slot.</p>
-                <img src="images/rune page.png" width="900px" />
-                <p>Each rune page contains runes from two paths: one primary and one secondary.</p>
-                <p>The primary path has one keystone and three lesser runes. The secondary path has two lesser runes</p>
-                <p>This is what you would see when you are in game, selecting your runes. In this example, the sorcery
-                  tree
-                  is chosen and arcane comet is the keystone. The player also chose lesser runes from the domination
-                  tree.
-                </p>
-                <img src="images/sorcdom.jpg" />
+              <div class="conclusion">
+                <h4>RECOMMENDATIONS</h4>
+                <p>To conclude this guide, I'll give some examples of recommended summoner spells and runes to take
+                  for
+                  the champions that I have recommended for each role.</p>
+                <div class="Top">
+                  <h4>Top</h4>
+                  <div class="champs">
+                    <img src="images/panth.png" />
+                    <img src="images/garen.webp" />
+                    <img src="images/morde.webp" />
+                  </div>
+                  <div class="runes">
+                    <img src="images/conq.webp" />
+                    <img src="images/grasp.webp" />
+                    <img src="images/conq.webp" />
+                  </div>
+                  <div class="sums">
+                    <img src="images/flash.png" />
+                    <img src="images/ignite.jpg" />
+                  </div>
+
+                </div>
+                <div class="Mid">
+                  <h4>Mid</h4>
+                  <div class="champs">
+                    <img src="images/ahir.webp" />
+                    <img src="images/yone.jpg" width="125px" />
+                    <img src="images/annie.webp" />
+                  </div>
+                  <div class="runes">
+                    <img src="images/electrocute.webp" />
+                    <img src="images/lethal tempo.webp" />
+                    <img src="images/electrocute.webp" />
+                  </div>
+                  <div class="sums">
+                    <img src="images/flash.png" />
+                    <img src="images/teleport.jpg" />
+
+                  </div>
+                </div>
+                <div class="Jungle">
+                  <h4>Jungle</h4>
+                  <div class="champs">
+                    <img src="images/yi.webp" />
+                    <img src="images/diana.webp" />
+                    <img src="images/warwick.webp" />
+                  </div>
+                  <div class="runes">
+                    <img src="images/lethal tempo.webp" />
+                    <img src="images/conq.webp" />
+                    <img src="images/lethal tempo.webp" />
+                  </div>
+                  <div class="sums">
+                    <img src="images/flash.png" />
+                    <img src="images/smite.png" />
+                  </div>
+
+                </div>
+                <div class="ADC">
+                  <h4>ADC</h4>
+                  <div class="champs">
+                    <img src="images/jinx.webp" />
+                    <img src="images/mf.png" />
+                    <img src="images/ashe.webp" />
+                  </div>
+                  <div class="runes">
+                    <img src="images/lethal tempo.webp" />
+                    <img src="images/first strike.webp" />
+                    <img src="images/lethal tempo.webp" />
+                  </div>
+                  <div class="sums">
+                    <img src="images/flash.png" />
+                    <img src="images/heal.jpg" />
+                  </div>
+                </div>
+
+                <div class="Support">
+                  <h4>Support</h4>
+                  <div class="champs">
+                    <img src="images/naut.webp" />
+                    <img src="images/lux.webp" />
+                    <img src="images/lulu.webp" />
+                  </div>
+                  <div class="runes">
+                    <img src="images/glacial.webp" />
+                    <img src="images/comet.webp" />
+                    <img src="images/aery.webp" />
+                  </div>
+                  <div class="sums">
+                    <img src="images/flash.png" />
+                    <img src="images/exhaust.jpg" />
+                  </div>
+                </div>
+
               </div>
-              <div>
-                <h4>SUMMONER SPELLS</h4>
-                <p>Beyond their QWER abilities, every summoner also must choose two summoner spells for their champion.
-                </p>
-                <p>Summoner spells act as two additional abilities with their own purposes and cooldowns.</p>
-                <p>I'll be covering the 6 most important summoner spells that you will most likely be using in an actual
-                  game.</p>
-
-                <div class="spell-container">
-                  <img src="images/flash.png" id="flash" height="70px" width="70px">
-                  <div class="spell-text">
-                    <p>The <span id="flash">"Flash"</span> summoner spell:</p>
-                    <p>Flash is by far the most popular summoner spell. It allows you to blink a short distance in any
-                      direction (including over walls).</p>
-                  </div>
-                </div>
-                <hr>
-                <div class="spell-container">
-                  <img src="images/teleport.jpg" id="teleport" height="70px" width="70px" />
-                  <div class="spell-text">
-                    <p>The <span id="teleport">"Teleport"</span> summoner spell:</p>
-                    <p>This summoner spell allows you to instantly teleport to an allied tower or ward after channeling
-                      for 4 seconds.</p>
-                    <p>This is most used when playing top or mid lane.</p>
-                  </div>
-                </div>
-                <hr>
-                <div class="spell-container">
-                  <img src="images/smite.png" id="smite" height="70px" width="70px" />
-                  <div class="spell-text">
-                    <p>The <span id="smite">"Smite"</span> summoner spell:</p>
-                    <p>Smite allows you to instantly cast a high burst damage spell upon a minion, monster, objectives,
-                      or pets (a minion controlled by a champion's abilities).</p>
-                    <p>This is a jungler’s core summoner spell and is required to play the role.</p>
-                  </div>
-                </div>
-                <hr>
-                <div class="spell-container">
-                  <img src="images/heal.jpg" id="heal" height="70px" width="70px" />
-                  <div class="spell-text">
-                    <p>The <span id="heal">"Heal"</span> summoner spell:</p>
-                    <p>Heal instantly replenishes some of your health (based on your level), as well as of another ally
-                      near you.</p>
-                    <p>This is most commonly seen in the bot lane by the ADC role or sometimes the Support role. It
-                      heals two allies at once, giving it more value there compared to other roles.</p>
-                  </div>
-                </div>
-                <hr>
-                <div class="spell-container">
-                  <img src="images/exhaust.jpg" id="exhaust" height="70px" width="70px" />
-                  <div class="spell-text">
-                    <p>The <span id="exhaust">"Exhaust"</span> summoner spell:</p>
-                    <p>Exhaust slows a champion and reduces their damage output by 35% over 3 seconds.</p>
-                    <p>This is primarily used defensively but can be used as a crowd control option for chasing
-                      opponents.</p>
-                  </div>
-                </div>
-                <hr>
-                <div class="spell-container">
-                  <img src="images/ignite.jpg" id="ignite" height="70px" width="70px" />
-                  <div class="spell-text">
-                    <p>The <span id="ignite">"Ignite"</span> summoner spell:</p>
-                    <p>Ignite is a spell that lasts for 5 seconds, inflicts burning damage, and reduces healing.</p>
-                    <p>It can often help you secure a kill as an enemy is trying to escape if you’re able to land it in
-                      time.</p>
-                  </div>
-                </div>
-
-                <div class="conclusion">
-                  <h4>RECOMMENDATIONS</h4>
-                  <p>To conclude this guide, I'll give some examples of recommended summoner spells and runes to take
-                    for
-                    the champions that I have recommended for each role.</p>
-                  <div class="Top">
-                    <h4>Top</h4>
-                    <div class="champs">
-                      <img src="images/panth.png" />
-                      <img src="images/garen.webp" />
-                      <img src="images/morde.webp" />
-                    </div>
-                    <div class="runes">
-                      <img src="images/conq.webp" />
-                      <img src="images/grasp.webp" />
-                      <img src="images/conq.webp" />
-                    </div>
-                    <div class="sums">
-                      <img src="images/flash.png" />
-                      <img src="images/ignite.jpg" />
-                    </div>
-
-                  </div>
-                  <div class="Mid">
-                    <h4>Mid</h4>
-                    <div class="champs">
-                      <img src="images/ahir.webp" />
-                      <img src="images/yone.jpg" width="115px" />
-                      <img src="images/annie.webp" />
-                    </div>
-                    <div class="runes">
-                      <img src="images/electrocute.webp" />
-                      <img src="images/lethal tempo.webp" />
-                      <img src="images/electrocute.webp" />
-                    </div>
-                    <div class="sums">
-                      <img src="images/flash.png" />
-                      <img src="images/teleport.jpg" />
-                    </div>
-
-                  </div>
-                  <div class="Jungle">
-                    <h4>Jungle</h4>
-                    <div class="champs">
-                      <img src="images/yi.webp" />
-                      <img src="images/diana.webp" />
-                      <img src="images/warwick.webp" />
-                    </div>
-                    <div class="runes">
-                      <img src="images/lethal tempo.webp" />
-                      <img src="images/conq.webp" />
-                      <img src="images/lethal tempo.webp" />
-                    </div>
-                    <div class="sums">
-                      <img src="images/flash.png" />
-                      <img src="images/smite.png" />
-                    </div>
-
-                  </div>
-                  <div class="ADC">
-                    <h4>ADC</h4>
-                    <div class="champs">
-                      <img src="images/jinx.webp" />
-                      <img src="images/mf.png" />
-                      <img src="images/ashe.webp" />
-                    </div>
-                    <div class="runes">
-                      <img src="images/lethal tempo.webp" />
-                      <img src="images/first strike.webp" />
-                      <img src="images/lethal tempo.webp" />
-                    </div>
-                    <div class="sums">
-                      <img src="images/flash.png" />
-                      <img src="images/heal.jpg" />
-                    </div>
-
-                    <div class="Support">
-                      <h4>Support</h4>
-                      <div class="champs">
-                        <img src="images/naut.webp" />
-                        <img src="images/lux.webp" />
-                        <img src="images/lulu.webp" />
-                      </div>
-                      <div class="runes">
-                        <img src="images/glacial.webp" />
-                        <img src="images/comet.webp" />
-                        <img src="images/aery.webp" />
-                      </div>
-                      <div class="sums">
-                        <img src="images/flash.png" />
-                        <img src="images/exhaust.jpg" />
-                      </div>
-                    </div>
-
-                  </div>
 
   </main>
 </body>

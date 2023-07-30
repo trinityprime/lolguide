@@ -104,13 +104,13 @@ body {
   background-color: black;
   min-width: 150px;
   z-index: 2;
-  top: 0; 
-  left: 110%; 
-  white-space: nowrap; 
+  top: 0;
+  left: 110%;
+  white-space: nowrap;
 }
 
 .dropdown:hover .dropchap {
-  display: flex; 
+  display: flex;
   flex-direction: row;
 }
 
@@ -127,12 +127,11 @@ body {
   background-color: #555;
 }
 
-/* Set a white border to the left of the dropdown menu */
 .dropchap::before {
   content: "";
   position: absolute;
   top: 10px;
-  left: -20px; /* Adjust this value to control the distance of the border */
+  left: -20px;
   border-width: 10px;
   border-style: solid;
   border-color: transparent transparent transparent black;
@@ -177,20 +176,6 @@ a {
   font-family: 'JetBrains Mono';
 }
 
-h4 {
-  color: yellow;
-}
-
-th {
-  color: black;
-  background-color: yellow;
-  border-color: black';
-
-}
-
-li {
-  color: whitesmoke;
-}
 
 #chapters-list {
   display: inline-block;
@@ -244,12 +229,6 @@ li {
   float: left;
 }
 
-th,
-td {
-  padding: 15px;
-  text-align: center;
-}
-
 caption {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
@@ -286,20 +265,58 @@ caption {
 }
 
 table {
-  border-collapse: collapse;
-  border-color: whitesmoke;
+  border-collapse: separate;
+  border: thin;
+  overflow: hidden;
+  border-radius: 20px
 }
 
-#champtable {
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+td {
+  border: none
+}
+
+h4 {
+  color: yellow;
+}
+
+th {
+  color: black;
+  background-color: yellow;
+  border-color: white;
+
+}
+
+.champtable tbody tr:nth-of-type(even) {
+  background-color: #242424;
+}
+
+li {
+  color: whitesmoke;
+}
+
+tbody tr {
+  color: grey;
+}
+
+.champtable {
   margin-right: auto;
   margin-left: auto;
-  float: left;
 }
 
-#champtable2 {
+.champtable2 {
   margin-left: auto;
   margin-right: auto;
   margin-left: 190px;
+}
+
+.champtable2 tbody tr:nth-of-type(odd) {
+  background-color: #242424;
 }
 
 #website {
@@ -316,11 +333,12 @@ table {
 .herald {
   border-style: solid;
   border-width: 3px;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 1em;
   display: inline-block;
   text-align: left;
   margin: 5px;
+  background-color: #121212;
 }
 
 #turretref {
@@ -334,6 +352,17 @@ table {
   border-color: whitesmoke;
   margin-left: 110px;
   align-content: center;
+}
+
+#score {
+  margin-left: 150px;
+  width: 50%;
+}
+
+#tower {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
 }
 
 .dragons {
@@ -353,7 +382,7 @@ table {
 }
 
 #elderbuff {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding-left: 50px;
 }
 
@@ -488,12 +517,15 @@ input[name^="tab-group"]:checked~.tab-content {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 25px;
+
 }
 
 .champs img {
   margin: 0 25px;
   max-width: 100%;
   height: auto;
+  border: solid white 3px
 }
 
 .runes img {
@@ -512,4 +544,15 @@ input[name^="tab-group"]:checked~.tab-content {
   padding-top: 20px;
 }
 
-
+.Top,
+.Jungle,
+.ADC,
+.Support,
+.Mid {
+  background-color: #121212;
+  border-radius: 30px;
+  border: solid 1px;
+  border-color: white;
+  margin: 20px;
+  padding: 20px;
+}
