@@ -331,20 +331,39 @@ tbody tr {
   text-decoration: underline;
 }
 
+legend {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: auto;
+}
+
+legend h4 {
+  font-size: 30px;
+}
+
+fieldset {
+  border: 2px solid grey;
+  padding: 30px;
+  margin: -20px;
+  border-radius: 20px ;
+}
+
 .towers,
 .dragons,
 .soul,
 .baron,
 .elder,
 .herald {
-  border-style: solid;
-  border-width: 3px;
-  border-radius: 20px;
   padding: 1em;
   display: inline-block;
   text-align: left;
-  margin: 5px;
   background-color: #121212;
+}
+
+.elder img {
+  width: 400px;
+  display: flexbox;
+  padding: 20px;
 }
 
 #turretref {
@@ -361,40 +380,9 @@ tbody tr {
 }
 
 #score {
-  margin-left: 150px;
-  width: 50%;
-}
+  margin-top: -50px;
+  width: 500px;
 
-#tower {
-  width: 300px;
-  height: 400px;
-  padding: 20px;
-}
-
-.dragons {
-  border-color: red;
-}
-
-.soul {
-  border-color: orange;
-}
-
-.baron {
-  border-color: purple;
-}
-
-.elder {
-  border-color: yellow;
-}
-
-#elderbuff {
-  margin-bottom: 50px;
-  padding-left: 50px;
-}
-
-#inhib {
-  margin-bottom: 70px;
-  margin-left: 5px
 }
 
 #baronbuff {
@@ -403,14 +391,12 @@ tbody tr {
   margin-left: 20px;
 }
 
-.herald {
-  border-color: green;
-}
-
-#heralddrop {
-  margin-right: 10px;
-  float: right;
-  padding: 10px;
+.herald img {
+  width: 500px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
 }
 
 #csing {
