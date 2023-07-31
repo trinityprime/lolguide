@@ -37,10 +37,10 @@ body {
 
 #scroll-indicator {
   width: 100%;
-  height: 5px;
+  height: 3px;
   background-color: #121212;
   position: fixed;
-  bottom: 0;
+  bottom: 780px;
   left: 0;
   z-index: 9999;
 }
@@ -237,31 +237,37 @@ caption {
   padding: 10px;
 }
 
-#xayah,
-#aphel,
-#healthmana,
+
+.stats img {
+  height: 270px;
+  width: 600px;
+  padding: 20px;
+}
+
+.abilities img {
+  height: 350px;
+  width: 600px;
+  padding: 20px;
+}
+
 #level,
 #map2,
 #herald,
 #heraldcharge,
 #csing,
 #shop,
-#mapnexus {
+#mapnexus,
+#roleassign img,
+.stats img,
+.abilities img {
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
-#healthmana {
-  padding-bottom: 10px;
-}
-
-#xayah {
-  padding-bottom: 20px;
-}
-
-#level {
-  padding: 10px;
+#roleassign img {
+  width: 800px;
+  height: 500px;
 }
 
 table {

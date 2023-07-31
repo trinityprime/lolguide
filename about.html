@@ -6,8 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link rel="stylesheet" id="text/css" href="about.css" />
-
 </head>
+<script>
+  window.addEventListener('scroll', function () {
+    let scrollPosition = document.documentElement.scrollTop;
+    let documentHeight = document.documentElement.scrollHeight;
+    let windowHeight = document.documentElement.clientHeight;
+    let scrollPercentage = (scrollPosition / (documentHeight - windowHeight)) * 100;
+    document.querySelector('#scroll-indicator-progress').style.width = scrollPercentage + '%';
+  });
+</script>
 <header>
   <div class="sidebar">
     <nav>
@@ -18,6 +26,10 @@
       </ul>
     </nav>
 </header>
+</div>
+
+<div id="scroll-indicator">
+  <div id="scroll-indicator-progress"></div>
 </div>
 
 <body>
@@ -63,7 +75,8 @@
       <div class="socials">
         <p><a href="https://discord.com/invite/leagueoflegends"><img src="images/discord.png" id="discord" /></a></p>
         <p><a href="https://www.op.gg/summoners/sg/DONT%20GIVE%20UP"><img src="images/opgg.png" id="opgg" /></a></p>
-        <p><a href="https://steamcommunity.com/profiles/76561198379555024/"><img src="images/steam.png"id="steam" /></a></p>
+        <p><a href="https://steamcommunity.com/profiles/76561198379555024/"><img src="images/steam.png"
+              id="steam" /></a></p>
         <p><a href="https://github.com/trinityprime"><img src="images/github.png" id="github" /></a></p>
       </div>
     </div>
