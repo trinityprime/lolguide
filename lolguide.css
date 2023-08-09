@@ -271,7 +271,7 @@ caption {
 }
 
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
   border: thin;
   overflow: hidden;
   border-radius: 20px
@@ -294,8 +294,6 @@ h4 {
 th {
   color: black;
   background-color: yellow;
-  border-color: white;
-
 }
 
 .champtable tbody tr:nth-of-type(even) {
@@ -459,14 +457,17 @@ fieldset {
   padding: 10px;
 }
 
+/* hides all <input> elements with a name attribute that starts with "tab-group" */
 input[name^="tab-group"] {
   display: none;
 }
 
+/* when <input> element is clicked, it will make the background of the label (tabs) transparent */
 input[name^="tab-group"]:checked+label {
   background-color: transparent
 }
 
+/* when <input> element is clicked, it will make the tab content element visible */
 input[name^="tab-group"]:checked~.tab-content {
   display: block;
 }
